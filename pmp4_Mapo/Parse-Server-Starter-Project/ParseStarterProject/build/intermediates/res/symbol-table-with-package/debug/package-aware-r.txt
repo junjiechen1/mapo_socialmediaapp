@@ -741,6 +741,7 @@ drawable cast_ic_notification_stop_live_stream
 drawable cast_mini_controller_gradient_light
 drawable cast_mini_controller_img_placeholder
 drawable cast_mini_controller_progress_drawable
+drawable chat
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_disabled
@@ -810,6 +811,7 @@ drawable ic_plusone_tall_off_client
 drawable ic_setting_dark
 drawable ic_setting_light
 drawable login
+drawable map
 drawable mr_ic_cast_dark
 drawable mr_ic_cast_light
 drawable mr_ic_media_route_connecting_mono_dark
@@ -827,6 +829,7 @@ drawable places_ic_clear
 drawable places_ic_search
 drawable powered_by_google_dark
 drawable powered_by_google_light
+drawable profile
 drawable quantum_ic_art_track_grey600_48
 drawable quantum_ic_cast_connected_white_24
 drawable quantum_ic_cast_white_36
@@ -917,6 +920,7 @@ id button_1
 id button_2
 id button_3
 id button_play_pause_toggle
+id buttonlayout
 id buttons
 id buyButton
 id buy_now
@@ -938,6 +942,8 @@ id cast_featurehighlight_view
 id cast_notification_id
 id center
 id chains
+id chatbutton2
+id chatbutton3
 id checkbox
 id chronometer
 id classic
@@ -987,6 +993,8 @@ id icon_uri
 id icon_view
 id ifRoom
 id image
+id imageView2
+id imageView3
 id imageView4
 id imageView5
 id index_entity_types
@@ -1009,6 +1017,8 @@ id loading_indicator
 id loginbutton
 id logo_only
 id main_container
+id mapbutton1
+id mapbutton3
 id match_global_nicknames
 id match_parent
 id media_actions
@@ -1040,6 +1050,8 @@ id place_autocomplete_separator
 id plain
 id play_pause
 id production
+id profilebutton1
+id profilebutton2
 id progressBar
 id progress_circular
 id progress_horizontal
@@ -1063,6 +1075,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id searchtext
 id seek_bar
 id seek_bar_controls
 id select_dialog_listview
@@ -1155,6 +1168,9 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout activity_login
 layout activity_main
+layout activity_main_chat_page
+layout activity_mainmap
+layout activity_mainprofile
 layout activity_signup
 layout cast_expanded_controller_activity
 layout cast_help_text
