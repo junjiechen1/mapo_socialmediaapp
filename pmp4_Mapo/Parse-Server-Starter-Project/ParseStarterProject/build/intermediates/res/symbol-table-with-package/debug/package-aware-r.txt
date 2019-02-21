@@ -183,6 +183,7 @@ attr latLngBoundsNorthEastLongitude
 attr latLngBoundsSouthWestLatitude
 attr latLngBoundsSouthWestLongitude
 attr layout
+attr layoutManager
 attr layout_constrainedHeight
 attr layout_constrainedWidth
 attr layout_constraintBaseline_creator
@@ -290,6 +291,7 @@ attr radioButtonStyle
 attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
+attr reverseLayout
 attr schemaOrgProperty
 attr schemaOrgType
 attr scopeUris
@@ -313,11 +315,13 @@ attr showDividers
 attr showText
 attr singleChoiceItemLayout
 attr sourceClass
+attr spanCount
 attr spinBars
 attr spinnerDropDownItemStyle
 attr spinnerStyle
 attr splitTrack
 attr srcCompat
+attr stackFromEnd
 attr state_above_anchor
 attr submitBackground
 attr subsectionSeparator
@@ -605,6 +609,9 @@ dimen disabled_alpha_material_light
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
+dimen item_touch_helper_max_drag_scroll_per_frame
+dimen item_touch_helper_swipe_escape_max_velocity
+dimen item_touch_helper_swipe_escape_velocity
 dimen mr_media_route_controller_art_max_height
 dimen notification_large_icon_height
 dimen notification_large_icon_width
@@ -923,6 +930,7 @@ id button_3
 id button_play_pause_toggle
 id buttonlayout
 id buttons
+id buttonslide
 id buyButton
 id buy_now
 id buy_with
@@ -1007,6 +1015,7 @@ id intent_data
 id intent_data_id
 id intent_extra_data
 id invisible
+id item_touch_helper_previous_elevation
 id large_icon_uri
 id left
 id light
@@ -1685,6 +1694,7 @@ styleable MenuItem android_icon android_enabled android_id android_checked andro
 styleable MenuView android_windowAnimationStyle android_itemTextAppearance android_horizontalDivider android_verticalDivider android_headerBackground android_itemBackground android_itemIconDisabledAlpha preserveIconSpacing
 styleable PopupWindow android_popupBackground overlapAnchor
 styleable PopupWindowBackgroundState state_above_anchor
+styleable RecyclerView android_orientation layoutManager reverseLayout spanCount stackFromEnd
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable Section indexPrefixes noIndex schemaOrgProperty sectionFormat sectionId sectionWeight subsectionSeparator
 styleable SectionFeature featureType
