@@ -6,24 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainChatPage">
 
-    <EditText
-        android:id="@+id/searchtext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
-        android:ems="10"
-        android:hint="Search"
-        android:inputType="textPersonName" />
-
     <LinearLayout
         android:id="@+id/buttonlayout"
         android:layout_width="match_parent"
@@ -71,11 +53,11 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="522dp"
-        android:layout_below="@+id/searchtext"
         android:layout_marginTop="8dp">
 
 
         <android.support.v7.widget.RecyclerView
+            android:id="@+id/userlist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </ScrollView>

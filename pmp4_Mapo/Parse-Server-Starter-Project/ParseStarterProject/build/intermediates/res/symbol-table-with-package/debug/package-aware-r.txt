@@ -1140,6 +1140,7 @@ id up
 id url
 id useLogo
 id userEditText
+id userlist
 id wide
 id withText
 id wrap
