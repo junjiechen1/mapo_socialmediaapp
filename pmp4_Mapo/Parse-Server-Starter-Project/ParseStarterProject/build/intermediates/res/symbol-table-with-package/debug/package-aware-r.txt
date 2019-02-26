@@ -90,6 +90,12 @@ attr cameraTargetLat
 attr cameraTargetLng
 attr cameraTilt
 attr cameraZoom
+attr cardBackgroundColor
+attr cardCornerRadius
+attr cardElevation
+attr cardMaxElevation
+attr cardPreventCornerOverlap
+attr cardUseCompatPadding
 attr castBackgroundColor
 attr castButtonBackgroundColor
 attr castButtonText
@@ -129,6 +135,11 @@ attr contentInsetEnd
 attr contentInsetLeft
 attr contentInsetRight
 attr contentInsetStart
+attr contentPadding
+attr contentPaddingBottom
+attr contentPaddingLeft
+attr contentPaddingRight
+attr contentPaddingTop
 attr contentProviderUri
 attr controlBackground
 attr corpusId
@@ -421,6 +432,10 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color cardview_dark_background
+color cardview_light_background
+color cardview_shadow_end_color
+color cardview_shadow_start_color
 color cast_expanded_controller_background_color
 color cast_expanded_controller_progress_text_color
 color cast_expanded_controller_text_color
@@ -581,6 +596,9 @@ dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+dimen cardview_compat_inset_shadow
+dimen cardview_default_elevation
+dimen cardview_default_radius
 dimen cast_expanded_controller_control_button_margin
 dimen cast_intro_overlay_button_margin_bottom
 dimen cast_intro_overlay_focus_radius
@@ -881,7 +899,9 @@ drawable signup
 drawable signupbutton
 drawable startimage
 drawable title
+id ChateditText
 id Loginbutton
+id SendChatButton
 id SignupButton
 id Signupbutton
 id action0
@@ -917,6 +937,7 @@ id background
 id background_image_view
 id background_place_holder_image_view
 id backgroundsignup
+id backtomainchat
 id barrier
 id beginning
 id book_now
@@ -951,6 +972,7 @@ id cast_featurehighlight_view
 id cast_notification_id
 id center
 id chains
+id chatListView
 id chatbutton2
 id chatbutton3
 id checkbox
@@ -1085,7 +1107,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id searchtext
 id seek_bar
 id seek_bar_controls
 id select_dialog_listview
@@ -1095,6 +1116,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id signoutbutton
 id slide
 id spacer
 id split_action_bar
@@ -1177,6 +1199,7 @@ layout abc_screen_toolbar
 layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
+layout activity_inside_chat
 layout activity_login
 layout activity_main
 layout activity_main_chat_page
@@ -1325,6 +1348,7 @@ style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
 style Base_Animation_AppCompat_DropDownUp
+style Base_CardView
 style Base_DialogWindowTitle_AppCompat
 style Base_DialogWindowTitleBackground_AppCompat
 style Base_TextAppearance_AppCompat
@@ -1463,6 +1487,9 @@ style Base_Widget_AppCompat_Spinner_Underlined
 style Base_Widget_AppCompat_TextView_SpinnerItem
 style Base_Widget_AppCompat_Toolbar
 style Base_Widget_AppCompat_Toolbar_Button_Navigation
+style CardView
+style CardView_Dark
+style CardView_Light
 style CastExpandedController
 style CastIntroOverlay
 style CastMiniController
@@ -1667,6 +1694,7 @@ styleable AppCompatTextView android_textAppearance textAllCaps
 styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listDividerAlertDialog listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingLeft listPreferredItemPaddingRight panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSmall textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
 styleable AppDataSearch
 styleable ButtonBarLayout allowStacking
+styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable CastExpandedController castControlButtons
 styleable CastIntroOverlay castBackgroundColor castButtonBackgroundColor castButtonText castButtonTextAppearance castFocusRadius castTitleTextAppearance
 styleable CastMiniController castControlButtons castShowImageThumbnail castSubtitleTextAppearance castTitleTextAppearance
