@@ -1,9 +1,11 @@
 package com.parse.starter;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.style.BackgroundColorSpan;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -58,10 +60,9 @@ public class InsideChat extends AppCompatActivity {
         Intent intent = getIntent();
         activeUser = intent.getStringExtra("username");
         setTitle(activeUser);
-        ListView chatListview = (ListView) findViewById(R.id.chatListView);
+        final ListView chatListview = (ListView) findViewById(R.id.chatListView);
         arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,messages);
         chatListview.setAdapter(arrayAdapter);
-
         final Handler handler = new Handler();
         Runnable runnable = new Runnable() {
             @Override
@@ -93,13 +94,16 @@ public class InsideChat extends AppCompatActivity {
                                 for (ParseObject message: objects){
 
                                     String messageContent = message.getString("message");
+
                                     // if not user
                                     if(!message.getString("sender").equals(ParseUser.getCurrentUser().getUsername())){
                                         messageContent = activeUser+": \n" + messageContent;
 
+
                                     }
                                     else{
                                         messageContent =  ParseUser.getCurrentUser().getUsername()+": \n"+messageContent;
+
                                     }
                                     messages.add(messageContent);
                                 }

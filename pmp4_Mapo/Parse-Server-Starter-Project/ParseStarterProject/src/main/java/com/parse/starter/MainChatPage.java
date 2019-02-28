@@ -60,7 +60,7 @@ public class MainChatPage extends AppCompatActivity {
         });
     }
     public void maplocation(View view){
-        Intent intent = new Intent(this,Mainmap.class);
+        Intent intent = new Intent(this,MapsActivity.class);
         startActivity(intent);
     }
     public void Profilelocation(View view){

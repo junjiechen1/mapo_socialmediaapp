@@ -13,7 +13,7 @@ public class Mainprofile extends AppCompatActivity {
         setContentView(R.layout.activity_mainprofile);
     }
     public void maplocation(View view){
-        Intent intent = new Intent(this,Mainmap.class);
+        Intent intent = new Intent(this,MapsActivity.class);
         startActivity(intent);
     }
     public void chatlocation(View view){
