@@ -855,6 +855,7 @@ drawable places_ic_search
 drawable powered_by_google_dark
 drawable powered_by_google_light
 drawable profile
+drawable pushin
 drawable quantum_ic_art_track_grey600_48
 drawable quantum_ic_cast_connected_white_24
 drawable quantum_ic_cast_white_36
@@ -943,6 +944,7 @@ id beginning
 id book_now
 id bottom
 id button
+id button2
 id buttonPanel
 id button_0
 id button_1
@@ -951,7 +953,6 @@ id button_3
 id button_play_pause_toggle
 id buttonlayout
 id buttons
-id buttonslide
 id buyButton
 id buy_now
 id buy_with
@@ -973,7 +974,6 @@ id cast_notification_id
 id center
 id chains
 id chatListView
-id chatbutton2
 id chatbutton3
 id checkbox
 id chronometer
@@ -1025,7 +1025,6 @@ id icon_view
 id ifRoom
 id image
 id imageView2
-id imageView3
 id imageView4
 id imageView5
 id index_entity_types
@@ -1084,7 +1083,6 @@ id plain
 id play_pause
 id production
 id profilebutton1
-id profilebutton2
 id progressBar
 id progress_circular
 id progress_horizontal
@@ -1204,9 +1202,9 @@ layout activity_inside_chat
 layout activity_login
 layout activity_main
 layout activity_main_chat_page
-layout activity_mainmap
 layout activity_mainprofile
 layout activity_maps
+layout activity_routing_map
 layout activity_signup
 layout cast_expanded_controller_activity
 layout cast_help_text
@@ -1342,6 +1340,7 @@ string tagmanager_preview_dialog_title
 string title_activity_driver_location
 string title_activity_maps
 string title_activity_rider
+string title_activity_routing_map
 string wallet_buy_button_place_holder
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

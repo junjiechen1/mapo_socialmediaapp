@@ -67,4 +67,15 @@
         app:layout_constraintBottom_toTopOf="@+id/ChateditText"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="routing"
+        android:text="Routing"
+        app:layout_constraintEnd_toStartOf="@+id/backtomainchat"
+        tools:layout_editor_absoluteY="7dp" />
+
 </android.support.constraint.ConstraintLayout>

@@ -3,6 +3,8 @@ package com.parse.starter;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -20,6 +22,10 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Locale;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -58,7 +64,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public void onLocationChanged(Location location) {
                 LatLng userlocation = new LatLng(location.getLatitude(), location.getLongitude());
                 mMap.addMarker(new MarkerOptions().position(userlocation).title("your location"));
-                mMap.moveCamera(CameraUpdateFactory.newLatLng(userlocation));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(userlocation,10));
+
             }
 
             @Override
@@ -99,10 +106,39 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 LatLng userlocation = new LatLng(lastknownlocation.getLatitude(), lastknownlocation.getLongitude());
                 mMap.addMarker(new MarkerOptions().position(userlocation).title("your location"));
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(userlocation));
+
+                Geocoder geocoder = new Geocoder(getApplicationContext(), Locale.getDefault());
+
+
+                try {
+                    List<Address> ListAdresss = geocoder.getFromLocation(lastknownlocation.getLatitude(),lastknownlocation.getLongitude(),1);
+                    if(ListAdresss!=null &&ListAdresss.size()>0 ){
+                        String address ="";
+                        if(ListAdresss.get(0).getSubThoroughfare()!=null){
+                            address+=ListAdresss.get(0).getSubThoroughfare()+" ";
+                        }
+                        if(ListAdresss.get(0).getSubThoroughfare()!=null){
+                            address+=ListAdresss.get(0).getThoroughfare()+",";
+                        }
+                        if(ListAdresss.get(0).getSubThoroughfare()!=null){
+                            address+=ListAdresss.get(0).getLocality()+",";
+                        }
+                        if(ListAdresss.get(0).getSubThoroughfare()!=null){
+                            address+=ListAdresss.get(0).getPostalCode()+",";
+                        }
+                        if(ListAdresss.get(0).getSubThoroughfare()!=null){
+                            address+=ListAdresss.get(0).getCountryName();
+                        }
+
+                        Toast.makeText(MapsActivity.this,address,Toast.LENGTH_SHORT).show();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
             }
         }
 
-        // Add a marker in Sydney and move the camera
 
     }
 

@@ -67,4 +67,5 @@ public class MainChatPage extends AppCompatActivity {
         Intent intent = new Intent(this,Mainprofile.class);
         startActivity(intent);
     }
+
 }

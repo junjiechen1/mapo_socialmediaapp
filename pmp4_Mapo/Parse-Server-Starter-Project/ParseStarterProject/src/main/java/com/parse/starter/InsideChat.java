@@ -122,5 +122,10 @@ public class InsideChat extends AppCompatActivity {
         handler.post(runnable);
         }
 
+        public void routing(View view){
+            Intent intent = new Intent(this,routingMap.class);
+            startActivity(intent);
+        }
+
 
 }
